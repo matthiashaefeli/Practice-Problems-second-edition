@@ -4,3 +4,5 @@ def makeArrayConsecutive2(statues)
     return new_array.length - statues.length
 end
 
+
+
