@@ -9,3 +9,11 @@ def kebabize(string)
 	return f.join("-").downcase
 end
 
+def middle(string)
+	array = string.split("")
+	until array.length <= 2
+		array.pop
+		array.shift
+	end
+	return array.join("")
+end
