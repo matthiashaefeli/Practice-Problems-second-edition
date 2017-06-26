@@ -4,5 +4,8 @@ def makeArrayConsecutive2(statues)
     return new_array.length - statues.length
 end
 
-
+def kebabize(string)
+	f = string.split /(?=[A-Z])/
+	return f.join("-").downcase
+end
 

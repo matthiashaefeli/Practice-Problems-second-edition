@@ -21,14 +21,14 @@ end
 
 describe "kebabize" do 
 
-	it "returns a given string into a string with - " do 
-		string = "camelsHaveThreeHumps"
-		expect(kebabize(string)).to eq "my-camel-cased-string"
+	it "returns a given camel string into a string with - bevor each upcase letter" do 
+		string = "myCamelHaseThreeHumps"
+		expect(kebabize(string)).to eq "my-camel-hase-three-humps"
 	end
 
 	it "returns a given string into a string with - " do 
-		string = "myCamelHas3Humps"
-		expect(kebabize(string)).to eq "my-camel-has-humps"
+		string = "myGameHasALotOfPlayers"
+		expect(kebabize(string)).to eq "my-game-has-a-lot-of-players"
 	end
 
 end
