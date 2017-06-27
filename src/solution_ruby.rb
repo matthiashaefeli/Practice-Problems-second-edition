@@ -17,3 +17,19 @@ def middle(string)
 	end
 	return array.join("")
 end
+
+def sum_of_pairs(integers, sum)
+end
+
+def auto_complete(input, dictionary)
+ new_array = []
+ index = input.length
+ dictionary.each do |word|
+   if word[0..index-1] == input.downcase
+     new_array << word
+   end
+  end
+
+return new_array[0..4]
+end
+

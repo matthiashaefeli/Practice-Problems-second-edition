@@ -30,7 +30,6 @@ describe "kebabize" do
 		string = "myGameHasALotOfPlayers"
 		expect(kebabize(string)).to eq "my-game-has-a-lot-of-players"
 	end
-
 end
 
 
@@ -66,37 +65,66 @@ end
 
 describe "sum of pairs" do 
 
-	it "returns the two integers given the the given sum" do
+	it "returns the two integers given the given sum" do
 		integers = [1, 4, 8, 7, 3, 15]
 		sum = 8 
 		expect(sum_of_pairs(integers, sum)).to eq [7, 1]
 	end
 	
-	it "returns the two integers given the the given sum" do
+	it "returns the two integers given the given sum" do
 		integers = [1, -2, 3, 0, -6, 1]
 		sum = -6 
 		expect(sum_of_pairs(integers, sum)).to eq [0, -6]
 	end
 
-	it "returns the two integers given the the given sum" do
+	it "returns the two integers given the given sum" do
 		integers = [1, 2, 3, 4, 1, 0]
 		sum = 2 
 		expect(sum_of_pairs(integers, sum)).to eq [1, 1]
 	end
 
-	it "returns the two integers given the the given sum" do
+	it "returns the two integers given the given sum" do
 		integers = [10, 5, 2, 3, 7, 5]
 		sum = 10
 		expect(sum_of_pairs(integers, sum)).to eq [3, 7]
 	end
 
-	it "returns the two integers given the the given sum" do
+	it "returns the two integers given the given sum" do
 		integers = [5, 9, 13, -3]
 		sum = 10
 		expect(sum_of_pairs(integers, sum)).to eq [13, -3]
 	end
 
 end
+
+describe "auto complete" do
+
+	it "returns an array (only first 5 elements) of a dictionary if the first given letters mach" do
+			dictionary=[ 'abnormal',
+								  'arm-wrestling',
+								  'absolute',
+								  'airplane',
+								  'airport',
+								  'amazing',
+								  'apple',
+								  'ball' ]
+			expect(auto_complete("ai", dictionary)).to eq ["airplane", "airport"]
+	end
+
+	it "returns an array (only first 5 elements) of a dictionary if the first given letters mach" do
+			dictionary=[ 'abnormal',
+								  'arm-wrestling',
+								  'absolute',
+								  'airplane',
+								  'airport',
+								  'amazing',
+								  'apple',
+								  'ball' ]
+			expect(auto_complete("a", dictionary)).to eq ['abnormal','arm-wrestling','absolute','airplane','airport']
+	end
+end
+
+
 
 
 

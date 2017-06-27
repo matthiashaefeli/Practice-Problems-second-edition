@@ -64,10 +64,11 @@ Sum of Pairs
 Given a list of integers and a single sum value, return the first two values (parse from the left please) in order of appearance that add up to form the sum.
 
 ------------------------------------------------------------------------------------------------------------
+auto_complete
 
+The autocomplete function will take in an input string and a dictionary array and return the values from the dictionary that start with the input string. If there are more than 5 matches, restrict your output to the first 5 results. If there are no matches, return an empty array.
 
-
-
+------------------------------------------------------------------------------------------------------------
 
 
 
