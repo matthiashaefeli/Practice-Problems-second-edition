@@ -70,9 +70,11 @@ The autocomplete function will take in an input string and a dictionary array an
 
 ------------------------------------------------------------------------------------------------------------
 
+Counting_duplicates
 
+Write a function that will return the count of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string. The input string can be assumed to contain only alphanumeric characters, including digits, uppercase and lowercase alphabets.
 
-
+------------------------------------------------------------------------------------------------------------
 
 
 

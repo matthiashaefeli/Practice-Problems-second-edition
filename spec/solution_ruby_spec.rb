@@ -124,6 +124,28 @@ describe "auto complete" do
 	end
 end
 
+describe "Counting duplicates" do 
+
+	it "returns the number of dublicated letters or numbers" do 
+		expect(counting_duplicates("")).to eq 0
+	end
+
+	it "returns the number of dublicated letters or numbers" do 
+		expect(counting_duplicates("abcdef")).to eq 0
+	end
+
+	it "returns the number of dublicated letters or numbers" do 
+		expect(counting_duplicates("hello")).to eq 1
+	end
+
+	it "returns the number of dublicated letters or numbers" do 
+		expect(counting_duplicates("Indivisibilities")).to eq 2
+	end
+
+end
+
+
+
 
 
 
