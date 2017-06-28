@@ -16,7 +16,6 @@ describe "consecutive" do
 		statues = [6, 3]
 		expect(makeArrayConsecutive2(statues)).to eq 2
 	end
-
 end
 
 describe "kebabize" do 
@@ -59,7 +58,6 @@ describe "middle" do
 		string = "of"
 		expect(middle(string)).to eq "of"
 	end
-
 end
 
 
@@ -94,7 +92,6 @@ describe "sum of pairs" do
 		sum = 10
 		expect(sum_of_pairs(integers, sum)).to eq [13, -3]
 	end
-
 end
 
 describe "auto complete" do
@@ -141,8 +138,31 @@ describe "Counting duplicates" do
 	it "returns the number of dublicated letters or numbers" do 
 		expect(counting_duplicates("Indivisibilities")).to eq 2
 	end
-
 end
+
+describe "reverse alphabetic characters" do 
+
+	it "reverse a given string without non alphabetic characters" do 
+		expect(reverse_alphabetic_characters("krishan")).to eq "nahsirk"
+	end
+
+	it "reverse a given string without non alphabetic characters" do 
+		expect(reverse_alphabetic_characters("ab23c")).to eq "cba"
+	end
+
+	it "reverse a given string without non alphabetic characters" do 
+		expect(reverse_alphabetic_characters("ultr53o?n")).to eq "nortlu"
+	end
+
+	it "reverse a given string without non alphabetic characters" do 
+		expect(reverse_alphabetic_characters("n&^%$2556_o")).to eq "on"
+	end
+end
+
+
+
+
+
 
 
 

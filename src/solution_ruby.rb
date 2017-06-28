@@ -38,5 +38,10 @@ def counting_duplicates(text)
 	return dup.uniq.length
 end
 
-
+def reverse_alphabetic_characters(string)
+  string.gsub!(/\d/, "")
+  string.gsub!(/\W/, "")
+  string.gsub!(/_/, "")
+  string.reverse
+end
 
