@@ -44,21 +44,21 @@ end
 
 def sum_of_pairs(integers, sum)
 	counter = 0
-	counter_two = 1
+	
 	final_array = []
 	while counter < integers.length
+		counter_two = 1
 		while counter_two < integers.length
-			p integers[counter] + integers[counter_two]
 			if integers[counter] + integers[counter_two] == sum 
 				final_array << integers[counter]
 				final_array << integers[counter_two]
 				return final_array
 			else
 				counter_two += 1
-			end 
-		
+			end
+
 		end 
-			counter += 1
+		counter += 1
 	end
 end
 

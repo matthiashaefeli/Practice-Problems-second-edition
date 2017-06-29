@@ -141,23 +141,23 @@ describe "sum of pairs" do
 		expect(sum_of_pairs(integers, sum)).to eq [0, -6]
 	end
 
-	# it "returns the two integers given the given sum" do
-	# 	integers = [1, 2, 3, 4, 1, 0]
-	# 	sum = 2 
-	# 	expect(sum_of_pairs(integers, sum)).to eq [1, 1]
-	# end
+	it "returns the two integers given the given sum" do
+		integers = [1, 2, 3, 4, 1, 0]
+		sum = 2 
+		expect(sum_of_pairs(integers, sum)).to eq [1, 1]
+	end
 
-	# it "returns the two integers given the given sum" do
-	# 	integers = [10, 5, 2, 3, 7, 5]
-	# 	sum = 10
-	# 	expect(sum_of_pairs(integers, sum)).to eq [3, 7]
-	# end
+	it "returns the two integers given the given sum" do
+		integers = [10, 5, 2, 3, 7, 5]
+		sum = 10
+		expect(sum_of_pairs(integers, sum)).to eq [5, 5]
+	end
 
-	# it "returns the two integers given the given sum" do
-	# 	integers = [5, 9, 13, -3]
-	# 	sum = 10
-	# 	expect(sum_of_pairs(integers, sum)).to eq [13, -3]
-	# end
+	it "returns the two integers given the given sum" do
+		integers = [5, 9, 13, -3]
+		sum = 10
+		expect(sum_of_pairs(integers, sum)).to eq [13, -3]
+	end
 end
 
 
