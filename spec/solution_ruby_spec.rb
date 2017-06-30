@@ -180,6 +180,37 @@ describe "binary code" do
 	end
 end
 
+describe "square digits" do 
+
+	it "returns square of each number" do 
+		expect(square_digits(3212)).to eq 9414
+	end
+
+	it "returns square of each number" do 
+		expect(square_digits(1234321)).to eq 14916941
+	end
+end
+
+
+describe "encode" do 
+
+	it "returns an array with ne number given of a string and a key" do
+		expect(encode("scout", 1939)).to eq [20, 12, 18, 30, 21]
+	end
+
+	it "returns an array with ne number given of a string and a key" do
+		expect(encode("masterpiece", 1939)).to eq [14, 10, 22, 29, 6, 27, 19, 18, 6, 12, 8]
+	end
+
+	it "returns an array with ne number given of a string and a key" do
+		expect(encode("aaaaaaa", 18)).to eq [2,9,2,9,2,9,2]
+	end
+end
+
+
+
+
+
 
 
 
