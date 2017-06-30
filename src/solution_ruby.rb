@@ -62,3 +62,7 @@ def sum_of_pairs(integers, sum)
 	end
 end
 
+
+def binary_array_to_number(arr)
+  # your code here
+end 
