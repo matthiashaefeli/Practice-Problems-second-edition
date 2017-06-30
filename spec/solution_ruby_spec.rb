@@ -161,6 +161,26 @@ describe "sum of pairs" do
 end
 
 
+describe "binary code" do 
+
+	it "returns the number of a binary code" do 
+		expect(binary_array_to_number([0,0,0,1])).to eq 1
+	end
+
+	it "returns the number of a binary code" do 
+		expect(binary_array_to_number([0,0,1,0])).to eq 2
+	end
+
+	it "returns the number of a binary code" do 
+		expect(binary_array_to_number([1,1,1,1])).to eq 15
+	end
+
+	it "returns the number of a binary code" do 
+		expect(binary_array_to_number([0,1,1,0])).to eq 1
+	end
+end
+
+
 
 
 
