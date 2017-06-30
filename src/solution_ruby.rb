@@ -29,9 +29,6 @@ def auto_complete(input, dictionary)
 return new_array[0..4]
 end
 
-def sum_of_pairs(integers, sum)
-end
-
 def counting_duplicates(text)
 	array = text.downcase.split("")
 	dup = array.select{|element| array.count(element) > 1 }
@@ -43,5 +40,25 @@ def reverse_alphabetic_characters(string)
   string.gsub!(/\W/, "")
   string.gsub!(/_/, "")
   string.reverse
+end
+
+def sum_of_pairs(integers, sum)
+	counter = 0
+	
+	final_array = []
+	while counter < integers.length
+		counter_two = 1
+		while counter_two < integers.length
+			if integers[counter] + integers[counter_two] == sum 
+				final_array << integers[counter]
+				final_array << integers[counter_two]
+				return final_array
+			else
+				counter_two += 1
+			end
+
+		end 
+		counter += 1
+	end
 end
 
