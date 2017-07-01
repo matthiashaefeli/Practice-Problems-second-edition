@@ -207,6 +207,28 @@ describe "encode" do
 	end
 end
 
+describe "persistence" do 
+
+	it "returns its multiplicative persistence, which is the number 
+		of times you must multiply the digits in num until you reach a single digit." do
+		expect(persistence(39)).to eq 3
+	end
+
+	it "returns its multiplicative persistence, which is the number 
+		of times you must multiply the digits in num until you reach a single digit." do
+		expect(persistence(999)).to eq 4
+	end
+
+	it "returns its multiplicative persistence, which is the number 
+		of times you must multiply the digits in num until you reach a single digit." do
+		expect(persistence(12345)).to eq 4
+	end
+end
+
+
+
+
+
 
 
 

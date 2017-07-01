@@ -62,7 +62,25 @@ def sum_of_pairs(integers, sum)
 	end
 end
 
+def encode(message, key)
+  alphabet = ("a".."z").to_a
+  counter = 0
+  str = key.to_s.split("")
+  result = []
+  message.split("").each do |letter|
+   number = alphabet.index(letter)+1
+   if counter == str.length
+     counter = 0
+     new_number = number + str[counter].to_i
+     counter += 1
+   else
+     new_number = number + str[counter].to_i
+     counter += 1
+   end
+	 result << new_number
+ 	end
+ return result
+end
 
-def binary_array_to_number(arr)
-  # your code here
-end 
+
+
