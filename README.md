@@ -97,10 +97,46 @@ Testing: [1, 0, 1, 1] ==> 11
 
 ------------------------------------------------------------------------------------------------------------
 
+square_digits
 
 
+Welcome. In this kata, you are asked to square every digit of a number.
+
+For example, if we run 9119 through the function, 811181 will come out.
+
+Note: The function accepts an integer and returns an integer
 
 
+------------------------------------------------------------------------------------------------------------
+
+encode
+
+a = 1 b = 2 etc is the alphabet
+give a string and a key
+method should return the number of the letter with the key
+ s  c  o  u  t
+19  3 15 21 20
+key equal to 1939
+output should be [20, 12, 18, 30, 21]
+
+------------------------------------------------------------------------------------------------------------
+
+
+persistence
+
+Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit.
+persistence(999) # returns 4, because 9*9*9=729, 7*2*9=126,
+                  # 1*2*6=12, and finally 1*2=2
+
+
+------------------------------------------------------------------------------------------------------------
+
+find_longest
+
+Find the number with the most digits.
+If two numbers in the argument array have the same number of digits, return the first one in the array.
+
+------------------------------------------------------------------------------------------------------------
 
 
 
