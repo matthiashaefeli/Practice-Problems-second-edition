@@ -237,6 +237,23 @@ describe "find longest" do
 	end
 end
 
+describe "get count" do 
+
+	it "returns how many vowels and consonants has a word" do 
+		expect(get_count("Test")).to eq [1,3]
+	end
+
+	it "returns how many vowels and consonants has a word" do 
+		expect(get_count("To be a Codewarrior or not to be")).to eq [12,13]
+	end
+
+	it "returns how many vowels and consonants has a word" do 
+		expect(get_count("$$%&*12345 66 }} ab")).to eq [1,1]
+	end
+end
+
+
+
 
 
 

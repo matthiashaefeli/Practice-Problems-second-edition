@@ -95,5 +95,11 @@ def find_longest(arr)
 	return result
 end
 
-
+def get_count(words)
+	words.gsub!(/\s|\d|\W/, "")
+	 vowels_count = words.downcase.scan(/[aeoui]/).count
+	consonants_count = words.length - vowels_count
+	result = [vowels_count, consonants_count]
+	return result
+end
 
