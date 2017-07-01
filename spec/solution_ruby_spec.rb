@@ -226,6 +226,16 @@ describe "persistence" do
 end
 
 
+describe "find longest" do 
+
+	it "returns longes digit of a given array with numbers" do
+		expect(find_longest([1, 10, 100])).to eq 100
+	end
+
+	it "returns longes digit of a given array with numbers" do
+		expect(find_longest([1, 200, 100000])).to eq 100000
+	end
+end
 
 
 

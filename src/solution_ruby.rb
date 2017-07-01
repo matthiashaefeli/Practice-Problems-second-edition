@@ -83,4 +83,17 @@ def encode(message, key)
 end
 
 
+def find_longest(arr)
+	longest = 0
+	result = 0
+	arr.each do |i|
+		if i.to_s.length > longest
+		 longest = i.to_s.length
+		 result = i
+		end
+	end
+	return result
+end
+
+
 
