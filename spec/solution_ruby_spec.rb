@@ -252,6 +252,21 @@ describe "get count" do
 	end
 end
 
+describe "mean" do 
+
+	it "returns an array with the sum of the given number and the string" do 
+		lst = ["u", "6", "d", "1", "i", "w", "6", "s", "t", "4", "a", "6", "g", "1", "2", "w", "8", "o", "2", "0"]
+		expect(mean(lst)).to eq [3.6, "udiwstagwo"]
+	end
+
+	it "returns an array with the sum of the given number and the string" do 
+		lst = ["1", "1", "1", "1", "1", "1", "1", "1", "1", "0", "a", "a", "d", "d", "g", "q", "u", "v", "y", "y"]
+		expect(mean(lst)).to eq [0.9, "aaddgquvyy"]
+	end
+
+end
+
+
 
 
 

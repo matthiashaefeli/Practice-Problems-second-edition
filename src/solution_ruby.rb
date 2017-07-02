@@ -103,3 +103,16 @@ def get_count(words)
 	return result
 end
 
+
+def mean(lst)
+  result = []
+  total = 0
+  number_array = lst.join.gsub(/\D/, "").split("")
+  string = lst.join.gsub(/[^a-z]/, "")
+  number_array.each do |n|
+    total += n.to_i
+  end
+  result << total/10.to_f
+  result << string
+  return result
+end
