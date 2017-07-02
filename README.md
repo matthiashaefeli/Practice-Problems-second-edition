@@ -138,6 +138,20 @@ If two numbers in the argument array have the same number of digits, return the 
 
 ------------------------------------------------------------------------------------------------------------
 
+mean
+
+You will be given an array which will include both integers and characters.
+
+Return an array of length 2 with a[0] representing the mean of the ten integers as a floating point number. There will always be 10 integers and 10 characters. Create a single string with the characters and return it as a[1] while maintaining the original order.
+
+------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 
 
