@@ -116,3 +116,36 @@ def mean(lst)
   result << string
   return result
 end
+
+
+def binary_array_to_number(bin)
+
+end
+
+def persistence(n)
+	num_array = []
+
+	final_array = n.to_s.split("")
+	counter = 0
+	until final_array.length == 1
+		final_array.map! { |n| n.to_i }
+		final_array = final_array.sum.to_s.split("")
+		counter += 1
+	end
+	return counter
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
