@@ -176,7 +176,7 @@ describe "binary code" do
 	end
 
 	it "returns the number of a binary code" do 
-		expect(binary_array_to_number([0,1,1,0])).to eq 1
+		expect(binary_array_to_number([0,1,1,0])).to eq 6
 	end
 end
 
@@ -221,7 +221,7 @@ describe "persistence" do
 
 	it "returns its multiplicative persistence, which is the number 
 		of times you must multiply the digits in num until you reach a single digit." do
-		expect(persistence(12345)).to eq 4
+		expect(persistence(1234)).to eq 4
 	end
 end
 
