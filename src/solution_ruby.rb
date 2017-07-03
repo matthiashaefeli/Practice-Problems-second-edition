@@ -126,7 +126,7 @@ def persistence(n)
 	num_array = []
 
 	final_array = n.to_s.split("")
-	counter = 0
+	counter = final_array.length-1
 	until final_array.length == 1
 		final_array.map! { |n| n.to_i }
 		final_array = final_array.sum.to_s.split("")

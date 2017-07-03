@@ -221,7 +221,7 @@ describe "persistence" do
 
 	it "returns its multiplicative persistence, which is the number 
 		of times you must multiply the digits in num until you reach a single digit." do
-		expect(persistence(12345)).to eq 4
+		expect(persistence(1234)).to eq 4
 	end
 end
 
