@@ -124,7 +124,6 @@ end
 
 def persistence(n)
 	num_array = []
-
 	final_array = n.to_s.split("")
 	counter = final_array.length-1
 	until final_array.length == 1
