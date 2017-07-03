@@ -119,7 +119,7 @@ end
 
 
 def binary_array_to_number(bin)
-
+	return bin.join("").to_i(2)
 end
 
 def persistence(n)
