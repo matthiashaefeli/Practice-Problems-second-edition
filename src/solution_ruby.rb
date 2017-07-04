@@ -132,7 +132,30 @@ def persistence(n)
 		counter += 1
 	end
 	return counter
+end
 
+def group(num_array)
+	counter = 0
+	new_array = []
+	until counter >= num_array.length
+		if new_array.include?(num_array.select { |n| n == num_array[counter] })
+			counter += 1
+		else
+		new_array << num_array.select { |n| n == num_array[counter] }
+		counter += 1
+	end
+	end
+	return new_array
+end
+
+def delete_nth(order,max_e)
+  final_array = []
+  order.each do |n|
+    if final_array.count(n) < max_e
+      final_array << n
+    end
+  end
+  return final_array
 end
 
 
