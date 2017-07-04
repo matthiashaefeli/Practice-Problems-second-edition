@@ -263,8 +263,40 @@ describe "mean" do
 		lst = ["1", "1", "1", "1", "1", "1", "1", "1", "1", "0", "a", "a", "d", "d", "g", "q", "u", "v", "y", "y"]
 		expect(mean(lst)).to eq [0.9, "aaddgquvyy"]
 	end
-
 end
+
+describe "group" do 
+
+	it "returns an array of an array sort in numbers how the given" do 
+		expect(group([3, 2, 6, 2, 1, 3])).to eq [[3, 3], [2, 2], [6], [1]]
+	end
+
+	it "returns an array of an array sort in numbers how the given" do 
+		expect(group([3, 2, 6, 2])).to eq [[3], [2, 2], [6]]
+	end
+
+	it "returns an array of an array sort in numbers how the given" do 
+		expect(group([1, 100, 4, 2, 4])).to eq [[1], [100], [4, 4], [2]]
+	end
+end
+
+
+describe "delete nth" do 
+
+	it "returns a given array with the given count max of each element" do 
+		expect(delete_nth([20,37,20,21], 1)).to eq [20,37,21]
+	end
+
+	it "returns a given array with the given count max of each element" do 
+		expect(delete_nth([1,1,3,3,7,2,2,2,2], 3)).to eq [1, 1, 3, 3, 7, 2, 2, 2]
+	end
+end
+
+
+
+
+
+
 
 
 

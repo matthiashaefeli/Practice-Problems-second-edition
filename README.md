@@ -146,12 +146,17 @@ Return an array of length 2 with a[0] representing the mean of the ten integers 
 
 ------------------------------------------------------------------------------------------------------------
 
+group
 
+Given an array of numbers, your function should return an array of arrays, where each subarray contains all the duplicates of a particular number. Subarrays should be in the same order as the first occurence of the number they contain:
+group([3, 2, 6, 2, 1, 3])
+>>> [[3, 3], [2, 2], [6], [1]]
 
+------------------------------------------------------------------------------------------------------------
 
+delete_nth
 
-
-
+Alice and Bob were on a holiday. Both of them took many pictures of the places they've been, and now they want to show Charlie their entire collection. However, Charlie doesn't like this sessions, since the motive usually repeats. He isn't fond of seeing the Eiffel tower 40 times. He tells them that he will only sit during the session if they show the same motive at most N times. Luckily, Alice and Bob are able to encode the motive as a number. Can you help them to remove numbers such that their list contains each number only up to N times, without changing the order?
 
 
 
