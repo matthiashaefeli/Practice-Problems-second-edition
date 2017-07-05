@@ -158,7 +158,9 @@ def delete_nth(order,max_e)
   return final_array
 end
 
-
+def take(a, l=1)
+    a[l..-1]
+end
 
 
 

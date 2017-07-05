@@ -292,6 +292,21 @@ describe "delete nth" do
 	end
 end
 
+describe "take" do 
+
+	it "takes an array and an integer and give ....... check tests" do 
+		expect(take([1,2,3,4], 1)).to eq [2,3,4]
+	end
+
+	it "takes an array and an integer and give ....... check tests" do 
+		expect(take([1,2,3,4], 2)).to eq [3,4]
+	end
+
+	it "takes an array and an integer and give ....... check tests" do 
+		expect(take([1,2,3,4])).to eq [2,3,4]
+	end
+end
+
 
 
 
