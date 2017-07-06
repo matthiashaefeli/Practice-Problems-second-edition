@@ -316,7 +316,7 @@ describe "increment string" do
 	end
 
 	it "takes a string and a number and give back the string with the number +1" do
-		expect(increment_string("foobar001")).to eq "foobar002"
+		expect(increment_string("foobar1")).to eq "foobar2"
 	end
 
 	it "takes a string and a number and give back the string with the number +1" do

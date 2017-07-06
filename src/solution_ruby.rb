@@ -180,7 +180,10 @@ def square_digits(numbers)
 end
 
 def increment_string(string)
-
+	number = string.gsub(/\D/, "")
+	new_number = number.to_i + 1
+	result = string.gsub(/\d/, "") + new_number.to_s
+	result
 end
 
 
