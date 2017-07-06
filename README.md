@@ -161,6 +161,26 @@ Alice and Bob were on a holiday. Both of them took many pictures of the places t
 
 ------------------------------------------------------------------------------------------------------------
 
+increment_string
+
+Your job is to write a function which increments a string, to create a new string. If the string already ends with a number, the number should be incremented by 1. If the string does not end with a number the number 1 should be appended to the new string.
+
+------------------------------------------------------------------------------------------------------------
+
+find_even_index
+
+You are going to be given an array of integers. Your job is to take that array and find an index N where the sum of the integers to the left of N is equal to the sum of the integers to the right of N. If there is no index that would make this happen, return -1.
+
+------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
 
 
 

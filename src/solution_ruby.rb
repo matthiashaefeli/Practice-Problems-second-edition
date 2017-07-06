@@ -162,6 +162,26 @@ def take(a, l=1)
     a[l..-1]
 end
 
+def find_even_index(arr)
+  counter = 0
+  until counter == arr.length
+    if sum(arr[0..counter]) == sum(arr[counter..-1])
+    return counter
+    else
+    counter += 1
+    end
+    end
+    return -1
+end
+
+def sum(array)
+  result = 0
+  array.each do |n|
+    result += n
+  end
+  result
+end
+
 
 
 
