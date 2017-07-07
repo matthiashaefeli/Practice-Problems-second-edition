@@ -186,7 +186,13 @@ def increment_string(string)
 	result
 end
 
-
+def find_it(seq)
+  seq.each do |n|
+    if seq.count(n).odd?
+      return n
+    end
+  end
+end
 
 
 
