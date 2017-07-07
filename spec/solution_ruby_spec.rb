@@ -328,7 +328,7 @@ describe "increment string" do
 	end
 end
 
-describe "" do
+describe "find it" do
 
 	it "Given an array, find the int that appears an odd number of times." do
 		expect(find_it([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5])).to eq 5
@@ -338,6 +338,22 @@ describe "" do
 		expect(find_it([1,1,1,1,1,1,10,1,1,1,1])).to eq 10
 	end
 end
+
+describe "duplicate encode" do
+
+	it " convert a string to a new string where each character in the new string is '(' if that character appears only once in the original string, or ')'" do
+		expect(duplicate_encode("din")).to eq "((("
+	end
+
+	it " convert a string to a new string where each character in the new string is '(' if that character appears only once in the original string, or ')'" do
+		expect(duplicate_encode("Success")).to eq ")())())"
+	end
+
+	it " convert a string to a new string where each character in the new string is '(' if that character appears only once in the original string, or ')'" do
+		expect(duplicate_encode("(( @")).to eq "))(("
+	end
+end
+
 
 
 

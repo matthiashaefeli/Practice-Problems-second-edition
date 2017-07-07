@@ -194,7 +194,18 @@ def find_it(seq)
   end
 end
 
-
+def duplicate_encode(word)
+  result = ""
+  word_array = word.downcase.split("")
+  word_array.each do |l|
+    if word_array.count(l) > 1
+      result << ")"
+    else
+      result << "("
+    end
+ end
+ return result
+end
 
 
 
