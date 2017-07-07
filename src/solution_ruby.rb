@@ -186,9 +186,26 @@ def increment_string(string)
 	result
 end
 
+def find_it(seq)
+  seq.each do |n|
+    if seq.count(n).odd?
+      return n
+    end
+  end
+end
 
-
-
+def duplicate_encode(word)
+  result = ""
+  word_array = word.downcase.split("")
+  word_array.each do |l|
+    if word_array.count(l) > 1
+      result << ")"
+    else
+      result << "("
+    end
+ end
+ return result
+end
 
 
 
