@@ -122,18 +122,6 @@ def binary_array_to_number(bin)
 	return bin.join("").to_i(2)
 end
 
-def persistence(n)
-	num_array = []
-	final_array = n.to_s.split("")
-	counter = final_array.length-1
-	until final_array.length == 1
-		final_array.map! { |n| n.to_i }
-		final_array = final_array.sum.to_s.split("")
-		counter += 1
-	end
-	return counter
-end
-
 def group(num_array)
 	counter = 0
 	new_array = []
@@ -158,6 +146,45 @@ def delete_nth(order,max_e)
   return final_array
 end
 
+def take(a, l=1)
+    a[l..-1]
+end
+
+def find_even_index(arr)
+  counter = 0
+  until counter == arr.length
+    if sum(arr[0..counter]) == sum(arr[counter..-1])
+    return counter
+    else
+    counter += 1
+    end
+    end
+    return -1
+end
+
+def sum(array)
+  result = 0
+  array.each do |n|
+    result += n
+  end
+  result
+end
+
+def square_digits(numbers)
+	n_array = numbers.to_s.split("")
+	new_array = []
+	n_array.each do |n|
+		new_array << n.to_i * n.to_i
+	end
+	new_array.join("").to_i
+end
+
+def increment_string(string)
+	number = string.gsub(/\D/, "")
+	new_number = number.to_i + 1
+	result = string.gsub(/\d/, "") + new_number.to_s
+	result
+end
 
 
 

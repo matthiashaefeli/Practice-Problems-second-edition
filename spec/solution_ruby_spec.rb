@@ -207,25 +207,6 @@ describe "encode" do
 	end
 end
 
-describe "persistence" do 
-
-	it "returns its multiplicative persistence, which is the number 
-		of times you must multiply the digits in num until you reach a single digit." do
-		expect(persistence(39)).to eq 3
-	end
-
-	it "returns its multiplicative persistence, which is the number 
-		of times you must multiply the digits in num until you reach a single digit." do
-		expect(persistence(999)).to eq 4
-	end
-
-	it "returns its multiplicative persistence, which is the number 
-		of times you must multiply the digits in num until you reach a single digit." do
-		expect(persistence(1234)).to eq 4
-	end
-end
-
-
 describe "find longest" do 
 
 	it "returns longes digit of a given array with numbers" do
@@ -291,6 +272,68 @@ describe "delete nth" do
 		expect(delete_nth([1,1,3,3,7,2,2,2,2], 3)).to eq [1, 1, 3, 3, 7, 2, 2, 2]
 	end
 end
+
+describe "take" do 
+
+	it "takes an array and an integer and give ....... check tests" do 
+		expect(take([1,2,3,4], 1)).to eq [2,3,4]
+	end
+
+	it "takes an array and an integer and give ....... check tests" do 
+		expect(take([1,2,3,4], 2)).to eq [3,4]
+	end
+
+	it "takes an array and an integer and give ....... check tests" do 
+		expect(take([1,2,3,4])).to eq [2,3,4]
+	end
+end
+
+
+describe "find even index" do 
+
+	it "takes an array and return the index of the number in the middle where both side give the same sum" do
+		expect(find_even_index([1,2,3,4,5,6])).to eq -1
+	end
+
+	it "takes an array and return the index of the number in the middle where both side give the same sum" do
+		expect(find_even_index([20,10,30,10,10,15,35])).to eq 3
+	end
+
+	it "takes an array and return the index of the number in the middle where both side give the same sum" do
+		expect(find_even_index([10,-80,10,10,15,35,20])).to eq 6
+	end
+
+	it "takes an array and return the index of the number in the middle where both side give the same sum" do
+		expect(find_even_index([-1,-2,-3,-4,-3,-2,-1])).to eq 3
+	end
+end
+
+
+describe "increment string" do 
+
+	it "takes a string and a number and give back the string with the number +1" do
+		expect(increment_string("foo")).to eq "foo1"
+	end
+
+	it "takes a string and a number and give back the string with the number +1" do
+		expect(increment_string("foobar1")).to eq "foobar2"
+	end
+
+	it "takes a string and a number and give back the string with the number +1" do
+		expect(increment_string("")).to eq "1"
+	end
+
+	it "takes a string and a number and give back the string with the number +1" do
+		expect(increment_string("foobar99")).to eq "foobar100"
+	end
+end
+
+
+
+
+
+
+
 
 
 
